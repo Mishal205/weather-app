@@ -1,8 +1,9 @@
 // src/components/Header.tsx
+'use client';
 import React from 'react';
 import { FaSun } from 'react-icons/fa';
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <div style={styles.header}>
       <FaSun style={styles.icon} />

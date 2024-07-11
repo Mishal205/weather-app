@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { CiTrophy } from 'react-icons/ci';
 import { FaLocationArrow } from 'react-icons/fa';
 import { PiX } from 'react-icons/pi';
-
 interface LocationSearchProps {
   onSearch: (city: string) => void;
   onGetLocation: (latitude: number, longitude: number) => void;
@@ -75,6 +74,11 @@ const styles = {
   button: {
     padding: '5px 10px',
     fontSize: '16px',
+    cursor: 'pointer',
+  },
+  locationText: { // Add this style definition
+    marginRight: '10px',
+    fontSize: '1rem',
     cursor: 'pointer',
   },
 };

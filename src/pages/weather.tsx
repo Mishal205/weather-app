@@ -9,7 +9,7 @@ const WeatherPage: React.FC = () => {
   const router = useRouter();
   const { weatherData,city } = router.query;
 
-  if (!weatherData || !city) {
+  if (!weatherData) {
     return <p>Loading...</p>;
   }
 
